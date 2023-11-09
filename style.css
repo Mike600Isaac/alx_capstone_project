@@ -57,7 +57,15 @@ nav
   width: 200px;
   cursor: pointer;
  }
-
+ .logo h1 
+ {
+  font-size: 30px;
+  cursor: pointer;
+ }
+ .logo h1 span
+ {
+  color: #ff004f;
+ }
  nav ul
  {
   display: flex;
