@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Portfolio Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/25eabe9618.js" crossorigin="anonymous"></script>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <!-- --------------header section------------------- -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="portfolio_images/logo.png" alt="kelvins logo" class="logo">
+        <ul id="mySideMenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECT</a></li>
+          <li><a href="#contact-me">CONTACT ME</a></li>
+          <div class="times">
+            <i class="fas fa-times" onclick="closeBar()"></i>
+          </div>
+        </ul>
+        <div class="handburger">
+          <i class="fas fa-bars" onclick="openBar()"></i>
+        </div>
+      </nav>
+      <!-- text for header section -->
+      <div class="header-content">
+        <div class="header-text">
+          <p>Website Developer</p>
+          <h1>Hi! I'm <span>Isaac Micheal</span> <br>From Nigeria Coding at <span>alx</span></h1>
+        </div>
+        <div class="header-img">
+          <img src="portfolio_images/pics4.png" alt="Mike's Picture">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------about section------------------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="portfolio_images/pics2.png" alt="user pics">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="about-me-statement">I am Isaac Micheal Sunday, from Nigeria studied computer engineering at the prestigious Federal University of technology FUTMinna which i obtained a bachelor in engineering in computer engineering in October 2021</p>
+          <p>Isaac Micheal Sunday is a young Tech entusiat who has worked previous in both government and private company as User Help Desk, IT Support and currently working as an IT System Administrator</p>
+          <p>Isaac Micheal Sunday is currently pursuing a lot of certifications in software like intro to SWE programme in alx</p>
+
+<!-- ------about me tabtitles---- -->
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <!-- For Skills -->
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li><span>Computer Hardware Repair</span><br>Troubleshooting/Installations Computers</li>
+              <li><span>Network Engineer</span><br> Troubleshooting/Installation Networks</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+            </ul>
+          </div>
+          <!-- for Experience -->
+          <div class="tab-content" id="experience">
+            <ul>
+              <li><span>IT Support Staff</span><br>First Microsoft Computer Technology (2019-2020)</li>
+              <li><span>User Help Desk</span> <br> Nigerian National Petroleum Corperation (2019)</li>
+              <li><span> Frontend Web Development</span><br>Coder Institute (2022-2023)</li>
+              <li><span>IT System Administrator</span><br>Great Brands Nigeria Limited (March 2023 - Till-Date)</li>
+            </ul>
+          </div>
+          <!-- For Education -->
+          <div class="tab-content" id="education">
+            <ul>
+              <li><span>Federal University of Technology</span><br>B.Engr. Computer Engineering<br>Minna, Niger State Nigeria (November 2015- September 2021)</li>
+              <li><span>Senior Secondary School Certicate</span><br>Hill-Side Model School <br>Suleja, Niger State Nigeria (November 2015- September 2021)</li>
+              <li><span>First Leaving School Certificate</span><br>United Baptist School
+                Suleja, Niger State Nigeria (2002 - 2007)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ------------projection section------------------------ -->
+<section id="projects">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+
+    <div class="project-list">
+      <div class="work">
+        <img src="portfolio_images/homePic.png" alt="">
+        <div class="layer">
+          <h3>HomePage</h3>
+          <p>You can click on the click below to return back to the HomePage</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="portfolio_images/aboutPic.png" alt="">
+        <div class="layer">
+          <h3>About-Me Page</h3>
+          <p>You can click on the click below to return back to the About-Me Page</p>
+          <a href="#about"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="portfolio_images/contactPic.png" alt="">
+        <div class="layer">
+          <h3>Contact-Me Page</h3>
+          <p>You can click on the click below to return back to the Contact-Me Page</p>
+          <a href="#contact-me"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn ">See more</a>
+  </div>
+</section>
+
+<!-- ----------contact me------------ -->
+<div id="contact-me">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-sharp fa-solid fa-paper-plane"></i>isaacmicheal603@gmail.com</p>
+        <p> <i class="fa-solid fa-square-phone"></i> +234 905 382 7755</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/skelebe.skels.3"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/MilkySword01?t=yCQi7W6llloeAqzM6V5kag&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://instagram.com/skelebeskels?igshid=MW02dWhyZGw2ZHdqcA=="><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/micheal-isaac-37a539264"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/message/Q3GAB2RAFT2FB1"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <a href="document/MIke's CV.pdf" download class="btn btn-2" >Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form method="" action="">
+          <div class="mb-3"><input type="text" id="name" class="b-color" name="Name" placeholder="Enter Name" class="form-control"> 
+          </div>
+          <div class="mb-3"><input type="text" id="email" class="b-color" name="Email" placeholder="Enter Email" class="form-control">
+          </div>
+          <div class="mb-3"><textarea name="Message" id="Message"  class="b-color" cols="" rows="10" placeholder="Your Message" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-2 btn-3 b-color">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <p>Copyright © Micheal Isaac Profile Project @ alx Intro SWE programme. programming made easy guys and certicate recognized by</p>
+  </div>
+</div>
+
+</body>
+</html>
